@@ -105,7 +105,7 @@ const PostRender = (props: Props) => {
             );
           } else {
             return (
-              <div>
+              <div key={index}>
                 <PostRenderData data={post} />
               </div>
             );

@@ -5,7 +5,7 @@ import QueryWrapper from "../QueryWrapper";
 
 type Props = {};
 
-const MIddleComponent = (props: Props) => {
+const MiddleComponent = (props: Props) => {
   return (
     <div>
       <NewPost />
@@ -16,4 +16,4 @@ const MIddleComponent = (props: Props) => {
   );
 };
 
-export default MIddleComponent;
+export default MiddleComponent;
