@@ -71,6 +71,12 @@ model ActivateToken {
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 }
 
+enum TypePost {
+  IMAGE
+  VIDEO
+  POST
+}
+
 model Post {
   id      String  @id @default(dbgenerated("concat('post_', replace(cast(gen_random_uuid() as text), '-', ''))")) @db.Text
   content  String?
