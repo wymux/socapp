@@ -17,7 +17,7 @@ import { useSession, signOut } from 'next-auth/react'
 type Props = {}
 
 const Navbar = (props: Props) => {
-    const { setTheme } = useTheme()
+    const { setTheme } = useTheme();
     const {data: Session, status} = useSession()
   return (
     <div className='max-w-[1280px] mx-auto'>
